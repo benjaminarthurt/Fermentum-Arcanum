@@ -8,7 +8,8 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
+    background-color: #0D0D0D; /* Dark background */
+    color: #DADADA; /* Light text for contrast */
 }
 
 /* Navbar */
@@ -17,9 +18,10 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #444;
-    color: white;
+    background-color: #222; /* Slightly lighter dark shade for navbar */
+    color: #E0E0E0;
 }
+
 
 .navbar .logo {
     font-size: 1.5rem;
@@ -38,9 +40,13 @@ body {
 }
 
 .navbar .menu a {
-    color: white;
+    color: #E0E0E0;
     text-decoration: none;
     margin-left: 1rem;
+}
+
+.navbar .menu a:hover {
+    color: #F1C40F; /* Gold color for hover effect */
 }
 
 /* Hero Section */
@@ -54,14 +60,20 @@ body {
 /* Sections */
 section {
     padding: 2rem;
+    background-color: #1A1A1A; /* Dark background for sections */
+    border-bottom: 1px solid #333; /* Subtle border for separation */
+}
+
+section h2 {
+    color: #F1C40F; /* Gold color for headings */
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #444;
-    color: white;
+    background-color: #222;
+    color: #E0E0E0;
 }
 
 @media screen and (max-width: 768px) {
