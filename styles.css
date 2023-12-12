@@ -13,33 +13,45 @@ body {
 }
 
 /* Navbar */
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #222; /* Slightly lighter dark shade for navbar */
+    background-color: #222;
     color: #E0E0E0;
 }
 
-
 .navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
     display: flex;
     align-items: center;
-}
-
-.navbar .logo img {
-    max-height: 100px; /* Adjust size as needed */
-    margin-right: 10px;
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    font-weight: bold;
 }
 
 .navbar .logo a {
-	text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 	color: #F1C40F;
 	font-size: 1.7rem;
     font-weight: bold;
+}
+
+.navbar .logo img {
+    height: 100px; /* Set the logo height */
+    margin-right: 10px;
+}
+
+.navbar .menu a {
+    color: #E0E0E0;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.navbar .menu a:hover {
+    color: #F1C40F;
 }
 
 .navbar .logo a:hover {
@@ -50,16 +62,6 @@ body {
 .navbar .logo a:visited {
 	text-decoration: none;
 	color: #F1C40F;
-}
-
-.navbar .menu a {
-    color: #E0E0E0;
-    text-decoration: none;
-    margin-left: 1rem;
-}
-
-.navbar .menu a:hover {
-    color: #F1C40F; /* Gold color for hover effect */
 }
 
 /* Hero Section */
