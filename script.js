@@ -7,5 +7,5 @@ document.addEventListener('DOMContentLoaded', function () {
         newsItems[currentNewsIndex].style.display = 'none';
         currentNewsIndex = (currentNewsIndex + 1) % totalNewsItems;
         newsItems[currentNewsIndex].style.display = 'inline-flex';
-    }, 5000); // Change news item every 5 seconds
+    }, 15000); // Change news item every 5 seconds
 });
