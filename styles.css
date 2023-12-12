@@ -111,6 +111,47 @@ section h2 {
     margin-bottom: 10px;
 }
 
+#news-section {
+    background-color: #4A2E19; /* Rich Brown background */
+    color: #FAF3E0; /* Creamy Off-white text */
+    padding: 20px;
+}
+
+.news-item {
+    border-bottom: 1px solid #8C6E4B; /* Warm Medium Brown border */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-item img {
+    width: 33%;
+    height: auto;
+    margin-right: 15px;
+}
+
+.news-text h3 {
+    color: #C59A5C; /* Amber for titles */
+    margin-bottom: 10px;
+}
+
+.news-text p {
+    color: #FAF3E0; /* Maintaining the creamy off-white for text */
+}
+
+/* Ensure other elements in the news section inherit these colors */
+#news-section a, #news-section a:visited {
+    color: #C59A5C;
+}
+
+#news-section a:hover, #news-section a:focus {
+    color: #FAF3E0;
+}
+
+
 
 /* Footer */
 footer {
