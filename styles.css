@@ -31,12 +31,25 @@ body {
 }
 
 .navbar .logo img {
-    max-height: 50px; /* Adjust size as needed */
+    max-height: 100px; /* Adjust size as needed */
     margin-right: 10px;
 }
 
 .navbar .logo a {
 	text-decoration: none;
+	color: #F1C40F;
+	font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.navbar .logo a:hover {
+	text-decoration: none;
+	color: #F1C40F;
+}
+
+.navbar .logo a:visited {
+	text-decoration: none;
+	color: #F1C40F;
 }
 
 .navbar .menu a {
