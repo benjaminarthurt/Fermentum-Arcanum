@@ -39,7 +39,7 @@ body {
 }
 
 .navbar .logo img {
-    height: 100px; /* Set the logo height */
+    height: 100px !important; /* Set the logo height */
     margin-right: 10px;
 }
 
