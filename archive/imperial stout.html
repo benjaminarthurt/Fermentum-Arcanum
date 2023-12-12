@@ -1,77 +1,247 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-<head xmlns="http://www.w3.org/1999/xhtml">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>BeerSmith 3 Online</title>
-<meta name='description' content='BeerSmith 3 Online' />
-<meta name='keywords' content='beersmith 3, online, tools, beersmith, beer, recipes, brewing, beersmith, homebrew, homebrewing, bsmx' />
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href='https://d1sqla7250puhf.cloudfront.net/theme/style-2.0-min.css' type="text/css" />
-<link rel="shortcut icon" href='https://d1sqla7250puhf.cloudfront.net/favicon.ico' />
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N873GEN522"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-N873GEN522');
-</script>
-<!-- End Google Analytics -->
-<link rel='stylesheet' href='https://d1sqla7250puhf.cloudfront.net/theme/jquery-ui.min.css' />
-<link rel='stylesheet' href='https://d1sqla7250puhf.cloudfront.net/web/reports/report-style-1.0-min.css' />
-<script type='application/javascript' src='https://d1sqla7250puhf.cloudfront.net/theme/jquery-1.12.4.min.js'></script>
-<script type='application/javascript' src='https://d1sqla7250puhf.cloudfront.net/theme/jquery-ui.min.js'></script>
-<script type='application/javascript' src='https://d1sqla7250puhf.cloudfront.net/theme/base.js'></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fermentum Arcanum</title>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#222222">
+	<meta name="msapplication-TileColor" content="#222222">
+	<meta name="theme-color" content="#222222">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-<div id='mobile-container'><div class='recipe_content'>
-<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/beersmith-2.6-min.js'></script>
-<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/recipe_core-1.6-min.js'></script>
-<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/jquery.xml2json-1.0-min.js'></script>
-<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/misc-1.2-min.js'></script>
-<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/water-1.3-min.js'></script>
-<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/grain-1.2-min.js'></script>
-<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/hops-1.2-min.js'></script>
-<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/yeast-1.3-min.js'></script>
-<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/carb-1.2-min.js'></script>
-<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/age-1.1-min.js'></script>
-<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/style-1.1-min.js'></script>
-<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/equip-1.3-min.js'></script>
-<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/mash-1.2-min.js'></script>
-<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/inventory-1.3-min.js'></script>
-<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/report-1.3-min.js'></script>
+<header>
+	<nav class="navbar">
+		<div class="logo"><a href="/index.html"><img src="/logo.png" alt="Fermentum Arcanum Logo">Fermentum Arcanum</a></div>
+		<div class="menu">
+			<a href="/index.html#philosophy">Philosophy</a>
+			<a href="/doctrine.html">Doctrine</a>
+			<a href="/index.html#practices">Practices</a>
+			<a href="/index.html#pillars">Ten Pillars</a>
+			<a href="/saga.html">The Saga</a>
+			<a href="/calendar.html">Rites of the Seasons</a>
+			<a href="/join.html">Join Us</a>
+		</div>
+	</nav>
+</header>
 
-<script type="application/javascript">
-$(document).ready(function() { 
-	initBeerSmith();
-        loadOpts('');
-	var type = 'beer';
-	var rpt = "<style type=\"text\/css\">\nbody { font-size: $PRINT_SCALE%; }\n<\/style>\n<div id=\"wrapper\">\n  <div id=\"header\">\n  <div class=\"logo\">\n   <h1>$NAME<\/h1>\n   <h2>$STYLE_NAME ($STYLE_NUMBER $STYLE_LETTER)<\/h2>\n   <\/div>\n <\/div>\n <div class=\"glass\"><img src='$GLASS' style=\"width:5.3em; height:9em;\" \/><\/div>\n <div class=\"col1\">\n <span class=\"item\">Type:<\/span> $TYPE<br>\n <span class=\"item\">Batch Size:<\/span> $DISPLAY_BATCH_SIZE<br>\n <span class=\"item\">Boil Size:<\/span> $DISPLAY_BOIL_SIZE<br>\n <span class=\"item\">Boil Time:<\/span> $BOIL_TIME min<br>\n <span class=\"item\">End of Boil Vol:<\/span> $POST_BOIL_VOLUME<br>\n <span class=\"item\">Final Bottling Vol:<\/span> $BOTTLING_VOLUME<br>\n <span class=\"item\">Fermentation:<\/span> $AGE_NAME<br>\n <\/div>\n <div class=\"col2\">\n <span class=\"item\">Date:<\/span> $DATE<br>\n <span class=\"item\">Brewer:<\/span> $BREWER<br>\n <span class=\"item\">Asst Brewer:<\/span> $ASST_BREWER<br>\n <span class=\"item\">Equipment:<\/span> $EQUIPMENT<br>\n <span class=\"item\">Efficiency:<\/span> $EFFICIENCY %<br>\n <span class=\"item\">Est Mash Efficiency:<\/span> $EST_MASH_EFFICIENCY<br>\n <span class=\"item\">Taste Rating:<\/span> $TASTE_RATING<br>\n <\/div>\n <div class=\"full\">\n <span class=\"item\">Taste Notes:<\/span> $TASTE_NOTES<br>\n <\/div>\n <div class=\"full\">\n $INGREDIENTS\n <\/div>\n <div class=\"full\">\n <h3>Gravity, Alcohol Content and Color<\/h3>\n <div class=\"col1\">\n <span class=\"item\">Est Original Gravity:<\/span> $EST_OG<br>\n <span class=\"item\">Est Final Gravity:<\/span> $EST_FG<br>\n <span class=\"item\">Estimated Alcohol by Vol:<\/span> $EST_ABV<br>\n <span class=\"item\">Bitterness:<\/span> $IBU<br>\n <span class=\"item\">Est Color:<\/span> $EST_COLOR\n <\/div>\n <div class=\"col2\">\n <span class=\"item\">Measured Original Gravity:<\/span> $DISPLAY_OG<br>\n <span class=\"item\">Measured Final Gravity:<\/span> $DISPLAY_FG<br>\n <span class=\"item\">Actual Alcohol by Vol:<\/span> $ABV<br>\n <span class=\"item\">Calories:<\/span> $CALORIES\n <\/div>\n <\/div>\n<div class=\"full\">\n<h3>Mash Profile<\/h3>\n <div class=\"col1\">\n <span class=\"item\">Mash Name:<\/span> $MASH_NAME<br>\n <span class=\"item\">Sparge Water:<\/span> $SPARGE_VOLUME<br>\n <span class=\"item\">Sparge Temperature:<\/span> $SPARGE_TEMP<br>\n <span class=\"item\">Adjust Temp for Equipment:<\/span> $EQUIP_ADJUST<br>\n <span class=\"item\">Est Mash PH:<\/span> $EST_MASH_PH<br \/>\n <span class=\"item\">Measured Mash PH:<\/span> $MASH_PH<br \/>\n <\/div>\n <div class=\"col2\">\n <span class=\"item\">Total Grain Weight:<\/span> $GRAIN_WEIGHT<br>\n <span class=\"item\">Grain Temperature:<\/span> $GRAIN_TEMP<br>\n <span class=\"item\">Tun Temperature:<\/span> $TUN_TEMP<br>\n  <span class=\"item\">Target Mash PH:<\/span> $TARGET_PH<br \/>\n <span class=\"item\">Mash Acid Addition:<\/span> $MASH_ACID_TEXT<br \/>\n <span class=\"item\">Sparge Acid Addition:<\/span> $SPARGE_ACID_TEXT<br \/>\n <\/div>\n $MASH_STEPS<br \/>\n <span class=\"item\">Sparge:<\/span> $SPARGE_STEPS\n <\/div>\n<div class=\"full\">\n<span class=\"item\">Mash Notes:<\/span> $MASH_NOTES<br>\n<\/div>\n<div class=\"full\">\n<h3>Carbonation and Storage<\/h3>\n <div class=\"col1\">\n <span class=\"item\">Carbonation Type:<\/span> $CARBONATION_TYPE<br>\n <span class=\"item\">Pressure\/Weight:<\/span> $CARBONATION_PRESS<br>\n <span class=\"item\">Keg\/Bottling Temperature:<\/span> $DISPLAY_CARB_TEMP<br>\n <span class=\"item\">Fermentation:<\/span> $AGE_NAME<br>\n <span class=\"item\">Fermenter:<\/span> $FERMENTER<br>\n <\/div>\n <div class=\"col2\">\n <span class=\"item\">Volumes of CO2:<\/span> $CARBONATION<br>\n <span class=\"item\">Carbonation Est:<\/span> $CARBONATION_USED<br>\n <span class=\"item\">Carbonation (from Meas Vol):<\/span> $MEASURED_CARB_AMOUNT<br>\n <span class=\"item\">Age for:<\/span> $AGE days<br>\n <span class=\"item\">Storage Temperature:<\/span> $DISPLAY_AGE_TEMP\n <\/div>\n <\/div>\n<div class=\"full\">\n<h3>Notes<\/h3>\n$NOTES\n<\/div>\n<p \/>\n<p align=\"right\"><i><font size=\"2\">Created with <\/font> <font size=\"2\"><a href=\"http:\/\/www.beersmith.com\">BeerSmith<\/a><\/font><\/i>\n<\/div>\n";
+<section id="beer">
+	<div id="wrapper">
+		<div id="header">
+			<div class="logo">
+				<h1>Imperial espresso stout</h1>
+				<h2>Imperial Stout (13 6)</h2>
+			</div>
+		</div>
+		<div class="glass"><img src="https://d1sqla7250puhf.cloudfront.net/web/images/Glasses64/NSRM36.png" style="width:5.3em; height:9em;"></div>
+		<div class="col1">
+			<span class="item">Type:</span> All Grain<br>
+			<span class="item">Batch Size:</span> 5.00 gal<br>
+			<span class="item">Boil Size:</span> 6.52 gal<br>
+			<span class="item">Boil Time:</span> 60 min<br>
+			<span class="item">End of Boil Vol:</span> 5.98 gal<br>
+			<span class="item">Final Bottling Vol:</span> 4.60<br>
+			<span class="item">Fermentation:</span> Ale, Two Stage<br>
+		</div>
+		<div class="col2">
+			<span class="item">Date:</span> 25 Jan 2014<br>
+			<span class="item">Brewer:</span> Benjamin Townsend<br>
+			<span class="item">Asst Brewer:</span> <br>
+			<span class="item">Equipment:</span> Pot and Cooler ( 5 Gal/19 L) - All Grain<br>
+			<span class="item">Efficiency:</span> 60.00 %<br>
+			<span class="item">Est Mash Efficiency:</span> 60.00 %<br>
+			<span class="item">Taste Rating:</span> 35.0<br>
+		</div>
+		<div class="full">
+			<span class="item">Taste Notes:</span> <br>
+		</div>
+		<div class="full">
+			<table class="BeerSmithTable" width="100%" cellspacing="0">
+				<caption>Ingredients</caption>
+				<tbody><tr><th width="10%" align="left"><b>Amount</b></th>
+					<th width="60%" align="left"><b>Name</b></th>
+					<th width="9%" align="left"><b>Type</b></th>
+					<th width="3%" align="left"><b>#</b></th>
+					<th width="9%" align="left"><b>%/IBU</b></th>
+					<th width="9%" align="left"><b>Volume</b></th>
+				</tr>
+				<tr>
+					<td align="left">10.00 gal</td>
+					<td align="left">Baldwinsville Water (2012)</td>
+					<td align="left">Water</td>
+					<td align="left">1</td>
+					<td align="left"> - </td>
+					<td align="left"> - </td>
+				</tr>
+				<tr>
+					<td align="left">14 lb </td>
+					<td align="left">Pale Ale Malt 2-Row (Briess) Mash (75.7%) - 3.5 SRM</td>
+					<td align="left">Grain</td>
+					<td align="left">2</td>
+					<td align="left">75.7%</td>
+					<td align="left">1.09 gal</td>
+				</tr>
+				<tr>
+					<td align="left">2 lb </td>
+					<td align="left">Coffee malt(Simpsons) Mash (10.8%) - 150.0 SRM</td>
+					<td align="left">Grain</td>
+					<td align="left">3</td>
+					<td align="left">10.8%</td>
+					<td align="left">0.16 gal</td>
+				</tr>
+				<tr>
+					<td align="left">1 lb </td>
+					<td align="left">Caramel/Crystal Malt - 60L Mash (5.4%) - 60.0 SRM</td>
+					<td align="left">Grain</td>
+					<td align="left">4</td>
+					<td align="left">5.4%</td>
+					<td align="left">0.08 gal</td>
+				</tr>
+				<tr>
+					<td align="left">1 lb </td>
+					<td align="left">Chocolate Malt Mash (5.4%) - 450.0 SRM</td>
+					<td align="left">Grain</td>
+					<td align="left">5</td>
+					<td align="left">5.4%</td>
+					<td align="left">0.08 gal</td>
+				</tr>
+				<tr>
+					<td align="left">8.0 oz</td>
+					<td align="left">Roasted Barley Mash (2.7%) - 300.0 SRM</td>
+					<td align="left">Grain</td>
+					<td align="left">6</td>
+					<td align="left">2.7%</td>
+					<td align="left">0.04 gal</td>
+				</tr>
+				<tr>
+					<td align="left">2.00 oz</td>
+					<td align="left">Magnum Boil 60 min (65.8 IBUs)</td>
+					<td align="left">Hop</td>
+					<td align="left">7</td>
+					<td align="left">65.8 IBUs</td>
+					<td align="left"> - </td>
+				</tr>
+				<tr>
+					<td align="left">4.00 tbsp</td>
+					<td align="left">Ground Espresso Beans (Brewed) Boil 5.0 min</td>
+					<td align="left">Flavor</td>
+					<td align="left">8</td>
+					<td align="left"> - </td>
+					<td align="left"> - </td>
+				</tr>
+				<tr>
+					<td align="left">1.0 pkgs</td>
+					<td align="left">Irish Ale Wyeast Labs #1084</td>
+					<td align="left">Ale yeast</td>
+					<td align="left">9</td>
+					<td align="left"> - </td>
+					<td align="left"> - </td>
+				</tr>
+				<tr>
+					<td align="left">4.00 tbsp</td>
+					<td align="left">Ground Espresso Beans (Brewed) Secondary 14.0 days</td>
+					<td align="left">Flavor</td>
+					<td align="left">10</td>
+					<td align="left"> - </td>
+					<td align="left"> - </td>
+				</tr>
+				</tbody></table>
+		</div>
+		<div class="full">
+			<h3>Gravity, Alcohol Content and Color</h3>
+			<div class="col1">
+				<span class="item">Est Original Gravity:</span> 1.080 SG<br>
+				<span class="item">Est Final Gravity:</span> 1.018 SG<br>
+				<span class="item">Estimated Alcohol by Vol:</span> 8.3 %<br>
+				<span class="item">Bitterness:</span> 65.8 IBUs<br>
+				<span class="item">Est Color:</span> 51.6
+			</div>
+			<div class="col2">
+				<span class="item">Measured Original Gravity:</span> 1.074 SG<br>
+				<span class="item">Measured Final Gravity:</span> 1.030 SG<br>
+				<span class="item">Actual Alcohol by Vol:</span> 5.9 %<br>
+				<span class="item">Calories:</span> 259 cal/12oz
+			</div>
+		</div>
+		<div class="full">
+			<h3>Mash Profile</h3>
+			<div class="col1">
+				<span class="item">Mash Name:</span> Temperature Mash, 1 Step, Medium Body<br>
+				<span class="item">Sparge Water:</span> 3.21 gal<br>
+				<span class="item">Sparge Temperature:</span> 168.0 F<br>
+				<span class="item">Adjust Temp for Equipment:</span> True<br>
+				<span class="item">Est Mash PH:</span> 5.32<br>
+				<span class="item">Measured Mash PH:</span> 5.20<br>
+			</div>
+			<div class="col2">
+				<span class="item">Total Grain Weight:</span> 18 lb 8.0 oz<br>
+				<span class="item">Grain Temperature:</span> 72.0 F<br>
+				<span class="item">Tun Temperature:</span> 72.0 F<br>
+				<span class="item">Target Mash PH:</span> 5.20<br>
+				<span class="item">Mash Acid Addition:</span>   - <br>
+				<span class="item">Sparge Acid Addition:</span>   - <br>
+			</div>
+			<table class="BeerSmithTable" width="100%" cellspacing="0">
+				<caption>Mash Steps</caption>
+				<tbody><tr><th width="25%" align="left"><b>Name</b></th>
+					<th width="51%" align="left"><b>Description</b></th>
+					<th width="12%" align="left"><b>Step Temperature</b></th>
+					<th width="12%" align="left"><b>Step Time</b></th>
+				</tr>
+				<tr>
+					<td align="left">Saccharification</td>
+					<td align="left">Add 23.13 qt of water at 163.3 F</td>
+					<td align="left">150.0 F</td>
+					<td align="left">75 min</td>
+				</tr>
+				<tr>
+					<td align="left">Mash Out</td>
+					<td align="left">Heat to 168.0 F over 10 min</td>
+					<td align="left">168.0 F</td>
+					<td align="left">10 min</td>
+				</tr>
+				</tbody></table><br>
+			<span class="item">Sparge:</span> Fly sparge with 12.83 qt water at 168.0 F
+		</div>
+		<div class="full">
+			<span class="item">Mash Notes:</span> Temperature mash for use when mashing in a brew pot over a heat source such as the stove.  Use heat to maintain desired temperature during the mash.<br>
+		</div>
+		<div class="full">
+			<h3>Carbonation and Storage</h3>
+			<div class="col1">
+				<span class="item">Carbonation Type:</span> Keg<br>
+				<span class="item">Pressure/Weight:</span> 13.7 psi<br>
+				<span class="item">Keg/Bottling Temperature:</span> 45.0 F<br>
+				<span class="item">Fermentation:</span> Ale, Two Stage<br>
+				<span class="item">Fermenter:</span> <br>
+			</div>
+			<div class="col2">
+				<span class="item">Volumes of CO2:</span> 100.0 vols<br>
+				<span class="item">Carbonation Est:</span> Keg with 13.7 psi<br>
+				<span class="item">Carbonation (from Meas Vol):</span> Keg with 13.7 psi<br>
+				<span class="item">Age for:</span> 30 days<br>
+				<span class="item">Storage Temperature:</span> 65.0 F
+			</div>
+		</div>
+		<div class="full">
+			<h3>Notes</h3>
 
-	if(type == 'shop' || type == 'inventory')
-		{
-		genInventoryReport(type);
-		return;
-		}
-	
-	if(rpt == "" || rpt == null)
-		{
-		$('#rpt_status').text("Could not load report template for this report");
-		return;
-		}
-	genReport(rpt, 362074);
-	// Print dialog option
-	if(typeof bsOpts.printReports != 'undefined' && bsOpts.printReports > 0)
-		window.print();	
-	});
-</script>
+		</div>
+		<p></p>
+		<p align="right"><i><font size="2">Created with </font> <font size="2"><a href="http://www.beersmith.com">BeerSmith</a></font></i>
+		</p></div>
+</section>
 
-<div class="report">
-<div class="status" id="rpt_status">Loading...</div>
-	<div hidden id="rpt_report_div">
-   		<div id="rpt_html">
-   		</div>
-	</div>
-</div>
-</div>
+<footer>
+	<p>&copy; 2023 Fermentum Arcanum</p>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
