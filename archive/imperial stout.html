@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head xmlns="http://www.w3.org/1999/xhtml">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>BeerSmith 3 Online</title>
+<meta name='description' content='BeerSmith 3 Online' />
+<meta name='keywords' content='beersmith 3, online, tools, beersmith, beer, recipes, brewing, beersmith, homebrew, homebrewing, bsmx' />
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href='https://d1sqla7250puhf.cloudfront.net/theme/style-2.0-min.css' type="text/css" />
+<link rel="shortcut icon" href='https://d1sqla7250puhf.cloudfront.net/favicon.ico' />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N873GEN522"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N873GEN522');
+</script>
+<!-- End Google Analytics -->
+<link rel='stylesheet' href='https://d1sqla7250puhf.cloudfront.net/theme/jquery-ui.min.css' />
+<link rel='stylesheet' href='https://d1sqla7250puhf.cloudfront.net/web/reports/report-style-1.0-min.css' />
+<script type='application/javascript' src='https://d1sqla7250puhf.cloudfront.net/theme/jquery-1.12.4.min.js'></script>
+<script type='application/javascript' src='https://d1sqla7250puhf.cloudfront.net/theme/jquery-ui.min.js'></script>
+<script type='application/javascript' src='https://d1sqla7250puhf.cloudfront.net/theme/base.js'></script>
+</head>
+<body>
+<div id='mobile-container'><div class='recipe_content'>
+<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/beersmith-2.6-min.js'></script>
+<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/recipe_core-1.6-min.js'></script>
+<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/jquery.xml2json-1.0-min.js'></script>
+<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/misc-1.2-min.js'></script>
+<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/water-1.3-min.js'></script>
+<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/grain-1.2-min.js'></script>
+<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/hops-1.2-min.js'></script>
+<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/yeast-1.3-min.js'></script>
+<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/carb-1.2-min.js'></script>
+<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/age-1.1-min.js'></script>
+<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/style-1.1-min.js'></script>
+<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/equip-1.3-min.js'></script>
+<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/mash-1.2-min.js'></script>
+<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/inventory-1.3-min.js'></script>
+<script type='text/javascript' src='https://d1sqla7250puhf.cloudfront.net/web/min/report-1.3-min.js'></script>
+
+<script type="application/javascript">
+$(document).ready(function() { 
+	initBeerSmith();
+        loadOpts('');
+	var type = 'beer';
+	var rpt = "<style type=\"text\/css\">\nbody { font-size: $PRINT_SCALE%; }\n<\/style>\n<div id=\"wrapper\">\n  <div id=\"header\">\n  <div class=\"logo\">\n   <h1>$NAME<\/h1>\n   <h2>$STYLE_NAME ($STYLE_NUMBER $STYLE_LETTER)<\/h2>\n   <\/div>\n <\/div>\n <div class=\"glass\"><img src='$GLASS' style=\"width:5.3em; height:9em;\" \/><\/div>\n <div class=\"col1\">\n <span class=\"item\">Type:<\/span> $TYPE<br>\n <span class=\"item\">Batch Size:<\/span> $DISPLAY_BATCH_SIZE<br>\n <span class=\"item\">Boil Size:<\/span> $DISPLAY_BOIL_SIZE<br>\n <span class=\"item\">Boil Time:<\/span> $BOIL_TIME min<br>\n <span class=\"item\">End of Boil Vol:<\/span> $POST_BOIL_VOLUME<br>\n <span class=\"item\">Final Bottling Vol:<\/span> $BOTTLING_VOLUME<br>\n <span class=\"item\">Fermentation:<\/span> $AGE_NAME<br>\n <\/div>\n <div class=\"col2\">\n <span class=\"item\">Date:<\/span> $DATE<br>\n <span class=\"item\">Brewer:<\/span> $BREWER<br>\n <span class=\"item\">Asst Brewer:<\/span> $ASST_BREWER<br>\n <span class=\"item\">Equipment:<\/span> $EQUIPMENT<br>\n <span class=\"item\">Efficiency:<\/span> $EFFICIENCY %<br>\n <span class=\"item\">Est Mash Efficiency:<\/span> $EST_MASH_EFFICIENCY<br>\n <span class=\"item\">Taste Rating:<\/span> $TASTE_RATING<br>\n <\/div>\n <div class=\"full\">\n <span class=\"item\">Taste Notes:<\/span> $TASTE_NOTES<br>\n <\/div>\n <div class=\"full\">\n $INGREDIENTS\n <\/div>\n <div class=\"full\">\n <h3>Gravity, Alcohol Content and Color<\/h3>\n <div class=\"col1\">\n <span class=\"item\">Est Original Gravity:<\/span> $EST_OG<br>\n <span class=\"item\">Est Final Gravity:<\/span> $EST_FG<br>\n <span class=\"item\">Estimated Alcohol by Vol:<\/span> $EST_ABV<br>\n <span class=\"item\">Bitterness:<\/span> $IBU<br>\n <span class=\"item\">Est Color:<\/span> $EST_COLOR\n <\/div>\n <div class=\"col2\">\n <span class=\"item\">Measured Original Gravity:<\/span> $DISPLAY_OG<br>\n <span class=\"item\">Measured Final Gravity:<\/span> $DISPLAY_FG<br>\n <span class=\"item\">Actual Alcohol by Vol:<\/span> $ABV<br>\n <span class=\"item\">Calories:<\/span> $CALORIES\n <\/div>\n <\/div>\n<div class=\"full\">\n<h3>Mash Profile<\/h3>\n <div class=\"col1\">\n <span class=\"item\">Mash Name:<\/span> $MASH_NAME<br>\n <span class=\"item\">Sparge Water:<\/span> $SPARGE_VOLUME<br>\n <span class=\"item\">Sparge Temperature:<\/span> $SPARGE_TEMP<br>\n <span class=\"item\">Adjust Temp for Equipment:<\/span> $EQUIP_ADJUST<br>\n <span class=\"item\">Est Mash PH:<\/span> $EST_MASH_PH<br \/>\n <span class=\"item\">Measured Mash PH:<\/span> $MASH_PH<br \/>\n <\/div>\n <div class=\"col2\">\n <span class=\"item\">Total Grain Weight:<\/span> $GRAIN_WEIGHT<br>\n <span class=\"item\">Grain Temperature:<\/span> $GRAIN_TEMP<br>\n <span class=\"item\">Tun Temperature:<\/span> $TUN_TEMP<br>\n  <span class=\"item\">Target Mash PH:<\/span> $TARGET_PH<br \/>\n <span class=\"item\">Mash Acid Addition:<\/span> $MASH_ACID_TEXT<br \/>\n <span class=\"item\">Sparge Acid Addition:<\/span> $SPARGE_ACID_TEXT<br \/>\n <\/div>\n $MASH_STEPS<br \/>\n <span class=\"item\">Sparge:<\/span> $SPARGE_STEPS\n <\/div>\n<div class=\"full\">\n<span class=\"item\">Mash Notes:<\/span> $MASH_NOTES<br>\n<\/div>\n<div class=\"full\">\n<h3>Carbonation and Storage<\/h3>\n <div class=\"col1\">\n <span class=\"item\">Carbonation Type:<\/span> $CARBONATION_TYPE<br>\n <span class=\"item\">Pressure\/Weight:<\/span> $CARBONATION_PRESS<br>\n <span class=\"item\">Keg\/Bottling Temperature:<\/span> $DISPLAY_CARB_TEMP<br>\n <span class=\"item\">Fermentation:<\/span> $AGE_NAME<br>\n <span class=\"item\">Fermenter:<\/span> $FERMENTER<br>\n <\/div>\n <div class=\"col2\">\n <span class=\"item\">Volumes of CO2:<\/span> $CARBONATION<br>\n <span class=\"item\">Carbonation Est:<\/span> $CARBONATION_USED<br>\n <span class=\"item\">Carbonation (from Meas Vol):<\/span> $MEASURED_CARB_AMOUNT<br>\n <span class=\"item\">Age for:<\/span> $AGE days<br>\n <span class=\"item\">Storage Temperature:<\/span> $DISPLAY_AGE_TEMP\n <\/div>\n <\/div>\n<div class=\"full\">\n<h3>Notes<\/h3>\n$NOTES\n<\/div>\n<p \/>\n<p align=\"right\"><i><font size=\"2\">Created with <\/font> <font size=\"2\"><a href=\"http:\/\/www.beersmith.com\">BeerSmith<\/a><\/font><\/i>\n<\/div>\n";
+
+	if(type == 'shop' || type == 'inventory')
+		{
+		genInventoryReport(type);
+		return;
+		}
+	
+	if(rpt == "" || rpt == null)
+		{
+		$('#rpt_status').text("Could not load report template for this report");
+		return;
+		}
+	genReport(rpt, 362074);
+	// Print dialog option
+	if(typeof bsOpts.printReports != 'undefined' && bsOpts.printReports > 0)
+		window.print();	
+	});
+</script>
+
+<div class="report">
+<div class="status" id="rpt_status">Loading...</div>
+	<div hidden id="rpt_report_div">
+   		<div id="rpt_html">
+   		</div>
+	</div>
+</div>
+</div>
