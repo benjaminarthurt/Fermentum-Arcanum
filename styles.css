@@ -82,6 +82,34 @@ section h2 {
     color: #F1C40F; /* Gold color for headings */
 }
 
+#news-section {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.news-item {
+    display: inline-flex;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.news-item img {
+    width: 33%;
+    height: auto;
+    margin-right: 15px;
+}
+
+.news-text {
+    width: 67%;
+}
+
+.news-text h3 {
+    margin-bottom: 10px;
+}
+
+
 /* Footer */
 footer {
     text-align: center;
