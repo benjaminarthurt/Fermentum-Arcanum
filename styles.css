@@ -131,6 +131,30 @@ section h2 {
 }
 
 
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #C59A5C; /* Amber color, resembling beer */
+    color: #FAF3E0; /* Creamy Off-white for text */
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+
+    /* Add a slight shadow for depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover, .button:focus {
+    background-color: #8C6E4B; /* A darker shade for hover effect */
+    color: #FFFFFF; /* White text on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+
+
 
 /* Footer */
 footer {
