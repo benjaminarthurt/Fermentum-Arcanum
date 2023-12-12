@@ -104,6 +104,7 @@ section h2 {
 
 .news-text {
     width: 67%;
+    word-wrap: break-word;
 }
 
 .news-text h3 {
